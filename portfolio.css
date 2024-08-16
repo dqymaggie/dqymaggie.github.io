@@ -1,6 +1,13 @@
 /* general */
 body{
   font-family: sans-serif;
+  background-color: white;
+  color: black;
+}
+
+.dark-mode {
+  background-color: #232427;
+  color: whitesmoke;
 }
 
 .small-text{
@@ -14,7 +21,7 @@ body{
 
 /* header */
 .header{
-  background-color: #233434;
+  background-color: #232427;
   color: white;
   font-weight: bold;
   padding: 10px 0;
