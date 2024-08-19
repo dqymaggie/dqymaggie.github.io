@@ -5,6 +5,13 @@ body{
   color: black;
 }
 
+#darkmode {
+  background-color: transparent; /* Makes the button background transparent */
+  border: none; /* Removes the button border */
+  color: inherit; /* Inherits the text color from the parent */
+  cursor: pointer; /* Changes the cursor to a pointer when hovering */
+}
+
 .dark-mode {
   background-color: #232427;
   color: whitesmoke;
