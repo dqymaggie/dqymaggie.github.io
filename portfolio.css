@@ -46,14 +46,12 @@ body{
 }
 
 #header-name {
-  background-color: #7c98ff;
   font-weight: bold;
   padding-left: 0.5em;
   white-space: nowrap;
 }
 
 .header-box {
-  background-color: red;
   display: flex;
   gap: 2em;
   white-space: nowrap;
@@ -63,7 +61,6 @@ body{
 }
 
 .header-text {
-  background-color: yellow;
   font-size: 1em;
   text-align: center;
   padding: 0;
