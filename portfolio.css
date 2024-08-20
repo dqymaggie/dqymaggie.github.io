@@ -112,7 +112,12 @@ a:visited, a:link {
 }
 
 .about-img{
-  width: inherit;
+  display: flex;
+  gap: 20px;
+  width: 70%;
+  border: 10px;
+  text-align: center;
+  align-items: center;
 }
 
 /* contact and buttom section */
@@ -175,17 +180,21 @@ main {
   top: 3.5em;
   left: 1em;
   font-weight: bold;
+  font-style: italic;
 }
 
 .project-tag {
   top: 3.5em;
   left: 1em;
   color: #989898;
+  font-size: small;
 }
 
 .project-year {
   top: 3.5em;
   left: 1em;
+  color: #989898;
+  font-size: small;
 }
 
 
