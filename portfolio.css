@@ -133,6 +133,58 @@ a:visited, a:link {
   padding-bottom: 5px;
 }
 
+/* projects */
+.project-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 35px;
+  /* width: 70%; */
+}
+
+.project {
+  background-color: #7c98ff;
+  flex: 1 0 300px;
+  /* background-color: #fff; */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 0.5em;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-name {
+  position: relative;
+  /* top: 1%;
+  left: 1%; */
+  top: 1em;
+  left: 1em;
+  font-weight: bold;
+}
+
+.project-tag {
+  position: relative;
+  /* top: 2%;
+  left: 1%; */
+  top: 1em;
+  left: 1em;
+}
+
+.project-year {
+  position: relative;
+  top: 1em;
+  left: 1em;
+}
+
+.project img {
+  width: 100%;
+  height: 100%;;
+  object-fit: cover;
+}
+
+.project:hover {
+  transform: scale(1.05);
+}
+
 /* large devices*
 @media(min-width: 1200px){
   #header-name{
