@@ -31,34 +31,43 @@ body{
   background-color: #232427;
   color: white;
   font-size: 1em;
-  /* padding: 10px 0; */
-  /* padding: 0.5em 0em 0.5em 2em; */
   padding: 10px 0;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header a {
-  float: left;
+  text-decoration: none;
 }
 
-#header-name{
+#header-name {
+  background-color: #7c98ff;
   font-weight: bold;
-  padding: 0 0 0 0.5em;
+  padding-left: 0.5em;
+  white-space: nowrap;
 }
 
-.header-box{
-  float: right;
-  padding: 0 0.5em 0 0;
+.header-box {
+  background-color: red;
+  display: flex;
+  gap: 2em;
+  white-space: nowrap;
+  flex-wrap: nowrap;
+  flex-grow: 0;
+  flex-shrink: 0;
 }
 
 .header-text {
+  background-color: yellow;
   font-size: 1em;
-  display: inline-block;
   text-align: center;
-  padding: 0 2em 0em 0em;
+  padding: 0;
+  margin: 0;
 }
 
 a:visited, a:link {
@@ -124,13 +133,12 @@ a:visited, a:link {
 .contact-icon{
   display: inline-block;
   margin: 5px 10px;
-  padding-bottom: 15px;
+  padding-bottom: 5px;
 }
 
-/*large devices**/
+/* large devices*
 @media(min-width: 1200px){
   #header-name{
-
     padding: 0 50% 0 25px;
     display: inline-block;
   }
@@ -148,7 +156,7 @@ a:visited, a:link {
   }
 }
 
-/*medium devices**/
+ medium devices
 @media (max-width: 1199px){
   #header-name{
     text-align: center;
@@ -162,4 +170,4 @@ a:visited, a:link {
     padding: 15px 0;
     width: 90%;
   }
-}
+} */
