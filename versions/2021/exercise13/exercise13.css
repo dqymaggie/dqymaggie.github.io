@@ -1,0 +1,33 @@
+body, html{
+  height: 100%;
+}
+
+#gif{
+  margin-left: 33%;
+  margin-right: auto;
+}
+
+.text{
+  text-align: center;
+}
+
+#line1{
+  animation-name: line_animate;
+  animation-duration: 1s;
+}
+
+.line_animate_on_event{
+  animation-name: line_animate;
+  animation-duration: 1s;
+}
+
+@keyframes line_animate {
+  from{
+    opacity: 0;
+    margin: 6px 0;
+  }
+  to{
+    opacity: 1;
+    margin: 0 0;
+  }
+}

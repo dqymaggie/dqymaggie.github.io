@@ -1,0 +1,11 @@
+body{
+	font-family: Avenir, sans-serif;
+}
+
+.text-input{
+	margin: 10px;
+}
+
+#feedback{
+  color: blue;
+}

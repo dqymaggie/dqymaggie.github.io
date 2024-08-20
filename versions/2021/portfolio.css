@@ -1,0 +1,137 @@
+/* general */
+body{
+  font-family: sans-serif;
+}
+
+.small-text{
+  font-size: 1em;
+}
+
+.large-text{
+  font-size: 3.5em;
+  padding: 0 0 15px 5px;
+}
+
+/* header */
+.header{
+  background-color: #233434;
+  color: white;
+  font-weight: bold;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+#header-name{
+  font-size: 1.5em;
+}
+
+.header-box{
+  text-align: center;
+}
+
+.header-text{
+  font-size: 1em;
+  display: inline-block;
+  text-align: center;
+  padding: 5px 0 5px 25px;
+}
+
+a:visited, a:link {
+	text-decoration: none;
+	color: inherit;
+}
+
+a:hover {
+  color: #7c98ff;
+}
+
+/* main */
+.main-text{
+  position: relative;
+  top: 6em;
+  text-align: center;
+}
+
+.button{
+  text-align: center;
+  background-color: #7c98ff;
+  color: white;
+  padding: 7px 0;
+  margin: 0 42%;
+  border-radius: 10px;
+  position: relative;
+  top: 7em;
+  font-weight: bold;
+}
+
+/* about */
+#about{
+  margin: 90px 30px 150px 30px;
+}
+
+.about-title{
+  font-style: italic;
+  font-weight: bold;
+}
+
+.about-img{
+  width: inherit;
+}
+
+/* contact */
+.contact-box {
+  background-color: #233434;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 15px 0;
+  width: 100%;
+  text-align: center;
+}
+
+.contact-icon{
+  display: inline-block;
+  margin: 5px 10px;
+  padding-bottom: 15px;
+}
+
+/*large devices**/
+@media(min-width: 1200px){
+  #header-name{
+
+    padding: 0 50% 0 25px;
+    display: inline-block;
+  }
+
+  .header-box{
+    text-align: center;
+    width: 25%;
+    display: inline;
+  }
+
+  .about-box{
+    width: 45%;
+    padding: 15px 0;
+    display: inline-block;
+  }
+}
+
+/*medium devices**/
+@media (max-width: 1199px){
+  #header-name{
+    text-align: center;
+  }
+
+  .header-box{
+    text-align: center;
+  }
+
+  .about-box{
+    padding: 15px 0;
+    width: 90%;
+  }
+}
