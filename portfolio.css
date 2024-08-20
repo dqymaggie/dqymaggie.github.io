@@ -134,52 +134,61 @@ a:visited, a:link {
 }
 
 /* projects */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Make sure the body takes the full height of the viewport */
+  margin: 0;
+}
 .project-box {
+  /* background-color: aqua; */
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  /* gap: 20px; */
   margin-top: 35px;
-  /* width: 70%; */
+  width: 70%;
+  justify-content: center;
 }
 
 .project {
-  background-color: #7c98ff;
-  flex: 1 0 300px;
+  position: relative;
+  /* background-color: #7c98ff; */
+  flex: 1 0 35%;
   /* background-color: #fff; */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin: 0.5em;
   border-radius: 10px;
+  overflow: hidden;
   transition: transform 0.3s ease-in-out;
 }
 
+.project img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
 .project-name {
-  position: relative;
-  /* top: 1%;
-  left: 1%; */
-  top: 1em;
+  /* top: 1em */
+  top: 3.5em;
   left: 1em;
   font-weight: bold;
 }
 
 .project-tag {
-  position: relative;
-  /* top: 2%;
-  left: 1%; */
-  top: 1em;
+  top: 3.5em;
   left: 1em;
+  color: #989898;
 }
 
 .project-year {
-  position: relative;
-  top: 1em;
+  top: 3.5em;
   left: 1em;
 }
 
-.project img {
-  width: 100%;
-  height: 100%;;
-  object-fit: cover;
-}
+
 
 .project:hover {
   transform: scale(1.05);
