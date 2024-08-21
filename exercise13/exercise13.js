@@ -27,5 +27,6 @@ line3.addEventListener('animationend', function(){
 })
 
 line4.addEventListener('animationend', function(){
+  line4.className = '';
   line4.style.opacity = '1';
 })

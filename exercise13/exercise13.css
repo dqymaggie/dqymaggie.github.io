@@ -3,7 +3,8 @@ body, html{
 }
 
 #gif{
-  margin-left: 33%;
+  display: block;
+  margin-left: auto;
   margin-right: auto;
 }
 
