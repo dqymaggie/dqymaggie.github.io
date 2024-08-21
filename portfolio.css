@@ -23,7 +23,7 @@ body{
 
 .large-text{
   font-size: 3.5em;
-  padding: 0 0 15px 5px;
+  /* background-color: aquamarine; */
 }
 
 /* header */
@@ -82,11 +82,32 @@ a:visited, a:link {
   color: white;
 }
 
-/* main */
+/* Index - main */
 .main-text{
   position: relative;
+  margin: auto auto;
+  width: 70%;
   top: 6em;
   text-align: center;
+  font-family: serif;
+  /* background-color: #7c98ff; */
+}
+
+.main-text p {
+  text-align: left;
+  margin-left: 10%;
+  /* background-color: aqua; */
+}
+
+.amp {
+  font-size: 0.5em; /* Make the & sign smaller */
+  vertical-align: middle; /* Align it vertically with the text */
+}
+
+.subtext {
+  font-size: 1em;
+  color: #d6c8d4;
+  text-align: right;
 }
 
 .button{
@@ -137,6 +158,9 @@ a:visited, a:link {
   margin: 5px 10px;
   padding-bottom: 5px;
 }
+
+
+
 
 /* projects */
 main {
@@ -240,3 +264,21 @@ main {
     width: 90%;
   }
 } */
+
+/* 
+
+.intro-text {
+  text-align: left;
+}
+
+.intro-text p {
+  font-size: 1.5em;
+}
+
+.intro-text h1 {
+  font-size: 5em;
+  font-weight: normal;
+  margin: 20px 0;
+  line-height: 1.1;
+}
+ */
