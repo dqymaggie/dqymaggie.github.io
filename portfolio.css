@@ -21,9 +21,18 @@ body{
   font-size: 1em;
 }
 
+.medium-text{
+  font-size: 1.7em;
+}
+
 .large-text{
   font-size: 3.5em;
   /* background-color: aquamarine; */
+}
+
+pre {
+  display: inline;
+  margin: 1em;
 }
 
 /* header */
@@ -122,9 +131,13 @@ a:visited, a:link {
   font-weight: bold;
 }
 
-/* about */
+/* About */
 #about{
   margin: 90px 30px 150px 30px;
+}
+
+.about-box {
+  padding-top: 5%;
 }
 
 .about-title{
