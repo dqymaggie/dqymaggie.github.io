@@ -37,8 +37,8 @@ pre {
 
 /* header */
 .header {
-  background-color: #232427;
-  color: white;
+  /* background-color: #232427; */
+  /* color: white; */
   font-size: 1em;
   padding: 10px 0;
   position: fixed;
@@ -157,8 +157,8 @@ a:visited, a:link {
 
 /* contact and buttom section */
 .contact-box {
-  background-color: #232427;
-  color: white;
+  /* background-color: #232427;
+  color: white; */
   position: fixed;
   bottom: 0;
   left: 0;
@@ -190,7 +190,7 @@ main {
   padding-top: 135px;
   padding-bottom: 135px;
   margin: auto auto;
-  width: 70%;
+  width: 80%;
   justify-content: center;
   /* background-color: aqua; */
   /* gap: 20px; */
