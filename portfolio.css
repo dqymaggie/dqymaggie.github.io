@@ -121,7 +121,7 @@ a:visited, a:link {
 
 .button{
   text-align: center;
-  background-color: #7c98ff;
+  background-color: #232427;
   color: white;
   padding: 7px 0;
   margin: 0 42%;
@@ -138,6 +138,7 @@ a:visited, a:link {
 
 .about-box {
   padding-top: 5%;
+  overflow-wrap: break-word;
 }
 
 .about-title{
