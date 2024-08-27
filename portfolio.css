@@ -40,7 +40,7 @@ pre {
   /* background-color: #232427; */
   /* color: white; */
   font-size: 1em;
-  padding: 10px 0;
+  padding: 1em 0;
   position: fixed;
   top: 0;
   left: 0;
@@ -48,6 +48,7 @@ pre {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 1px solid #c5c8d0;
 }
 
 .header a {
@@ -56,11 +57,12 @@ pre {
 
 #header-name {
   font-weight: bold;
-  padding-left: 0.5em;
+  padding-left: 1em;
   white-space: nowrap;
 }
 
 .header-box {
+  padding-right: 1em;
   display: flex;
   gap: 2em;
   white-space: nowrap;
