@@ -24,6 +24,11 @@ footer {
   color: whitesmoke;
 }
 
+.dark-mode .header {
+  background-color: #232427;
+  color: whitesmoke;
+}
+
 .small-text{
   font-size: 1em;
 }
