@@ -11,3 +11,13 @@ function darkMode() {
         icon.classList.add('bi-moon-fill');
     }
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+    var links = document.querySelectorAll('.header-box a');
+
+    links.forEach(function(link) {
+        if (link.href === window.location.href) {
+            link.querySelector('.header-text').classList.add('active');
+        }
+    });
+});
