@@ -96,5 +96,24 @@
       </div>
     </footer>
 
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var theme = localStorage.getItem('theme');
+      var element = document.body;
+      var icon = document.getElementById('darkmode-icon');
+      
+      if (theme === 'dark') {
+          element.classList.add('dark-mode');
+          icon.classList.remove('bi-moon-fill');
+          icon.classList.add('bi-sun');
+      } else {
+          element.classList.remove('dark-mode');
+          icon.classList.remove('bi-sun');
+          icon.classList.add('bi-moon-fill');
+      }
+  });
+</script>
+  
+
   </body>
 </html>

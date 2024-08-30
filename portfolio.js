@@ -6,9 +6,11 @@ function darkMode() {
     if (element.classList.contains('dark-mode')) {
         icon.classList.remove('bi-moon-fill');
         icon.classList.add('bi-sun');
+        localStorage.setItem('theme', 'dark');
     } else {
         icon.classList.remove('bi-sun');
         icon.classList.add('bi-moon-fill');
+        localStorage.setItem('theme', 'light');
     }
 }
 
