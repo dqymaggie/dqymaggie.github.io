@@ -226,6 +226,10 @@ a:visited, a:link {
   overflow-wrap: break-word;
 }
 
+.about-box a {
+  text-decoration: underline;
+}
+
 .indent-text {
   margin: 0.5px 0 2px 2em;
   font-size: 0.9em;
