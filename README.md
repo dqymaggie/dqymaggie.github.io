@@ -1,1 +1,3 @@
-Personal Porfolio Website for Maggie Dong
+# dqymaggie.github.io
+
+Maggie Dong's personal website written with HTML, CSS, and JavaScript.
