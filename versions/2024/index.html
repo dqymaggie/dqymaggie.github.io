@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv='cache-control' content='no-cache'> 
+    <meta http-equiv='expires' content='0'> 
+    <meta http-equiv='pragma' content='no-cache'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Maggie - Home</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico?">
+    <link rel="stylesheet" href="portfolio.css">
+    <script src="portfolio.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <div class="header">
+      <a href="index.html"><div id="header-name">Maggie Dong</div></a>
+      <div class="header-box">
+        <a href="projects.html"><div class="header-text">Projects</div></a>
+        <a href="about.html"><div class="header-text">About</div></a>
+        <script src="portfolio.js"></script>
+        <button onclick="darkMode()" id="darkmode">
+          <i id="darkmode-icon" class="bi bi-moon-fill"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- MAIN INDEX -->
+    <p></p>
+    <div class="main">
+    <div class="main-text">
+      <p>I'm a</p>
+      <!-- <div class="circle"></div> -->
+      <div class="title-text">Software Engineer  <span class="amp">&</span><br>Data Scientist</div>
+      <div class="subtext">math, coding, problem solving</div>
+    </div>
+    <p></p>
+    <a href="resume_2024.pdf" target="_blank">
+      <div class="button">Resume</div>
+    </a>
+  </div>
+
+    <div class="display-box">
+      <p class="medium-text"><a href="projects.html">Projects</a></p>
+      <section class="project-box">
+        <!-- 2024 -->
+        <div class="project">
+          <div class="project-name">Vaccine Scheduler</div>
+          <div class="project-tag">SQL, Azure</div>
+          <div class="project-year">2024</div>
+          <a href="https://github.com/dqymaggie/414database-uw24sp"><img src="images/vaccine.webp" alt=""></a>
+        </div>
+        <div class="project">
+          <div class="project-name">Algorithms</div>
+          <div class="project-tag">Java</div>
+          <div class="project-year">2024</div>
+          <a href="https://github.com/dqymaggie/417algorithms-uw24wi"><img src="images/project.png" alt=""></a>
+        </div>
+        <div class="project">
+          <div class="project-name">Applied Statistics</div>
+          <div class="project-tag">R</div>
+          <div class="project-year">2024</div>
+          <a href="https://github.com/dqymaggie/414database-uw24sp"><img src="images/project.png" alt=""></a>
+        </div>
+        <div class="project">
+          <div class="project-name">Dependent Data</div>
+          <div class="project-tag">R</div>
+          <div class="project-year">2024</div>
+          <a href="https://github.com/dqymaggie/417algorithms-uw24wi"><img src="images/project.png" alt=""></a>
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="contact-icon">
+        <a href="mailto:dqymaggie@gmail.com" target="_blank">
+          <i class="fa-solid fa-envelope"></i>
+          <!-- <i class="fa fa-envelope" style="font-size:32px"></i> -->
+        </a>
+      </div>
+      <div class="contact-icon">
+        <a href="https://www.linkedin.com/in/dqymaggie/" target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+          <!-- <i class="fa fa-linkedin-square" style="font-size:36px"></i> -->
+        </a>
+      </div>
+      <div class="contact-icon">
+        <a href="https://github.com/dqymaggie" target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </div>
+    </footer>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var theme = localStorage.getItem('theme');
+      var element = document.body;
+      var icon = document.getElementById('darkmode-icon');
+      
+      if (theme === 'dark') {
+          element.classList.add('dark-mode');
+          icon.classList.remove('bi-moon-fill');
+          icon.classList.add('bi-sun');
+      } else {
+          element.classList.remove('dark-mode');
+          icon.classList.remove('bi-sun');
+          icon.classList.add('bi-moon-fill');
+      }
+  });
+</script>
+  
+
+  </body>
+</html>

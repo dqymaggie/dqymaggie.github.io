@@ -1,119 +1,202 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv='cache-control' content='no-cache'> 
-    <meta http-equiv='expires' content='0'> 
-    <meta http-equiv='pragma' content='no-cache'>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Maggie - Home</title>
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico?">
+    <title>Maggie Dong Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico?" />
     <link rel="stylesheet" href="portfolio.css">
     <script src="portfolio.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Icon packs -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    
   </head>
 
   <body>
     <!-- HEADER -->
-    <div class="header">
-      <a href="index.html"><div id="header-name">Maggie Dong</div></a>
-      <div class="header-box">
-        <a href="projects.html"><div class="header-text">Projects</div></a>
-        <a href="about.html"><div class="header-text">About</div></a>
-        <script src="portfolio.js"></script>
-        <button onclick="darkMode()" id="darkmode">
-          <i id="darkmode-icon" class="bi bi-moon-fill"></i>
-        </button>
+    <header class="site-header" role="banner">
+      <div class="header-inner">
+        <a href="index.html" id="header-name" class="brand">Maggie Dong</a>
+
+        <nav class="header-box" aria-label="Primary">
+          <!-- Use <span class="header-text"> inside <a> so the underline pseudo-element is easy -->
+          <a href="index.html"><span class="header-text">Home</span></a>
+          <a href="#skills"><span class="header-text">Skills</span></a>
+          <a href="#projects"><span class="header-text">Projects</span></a>
+          <a href="#contact"><span class="header-text">Contact</span></a>
+
+          <button onclick="toggleTheme()" id="darkmode" aria-label="Toggle theme">
+            <i id="darkmode-icon" class="bi bi-sun" aria-hidden="true"></i>
+          </button>
+        </nav>
       </div>
-    </div>
+    </header>
 
-    <!-- MAIN INDEX -->
-    <p></p>
-    <div class="main">
-    <div class="main-text">
-      <p>I'm a</p>
-      <!-- <div class="circle"></div> -->
-      <div class="title-text">Software Engineer  <span class="amp">&</span><br>Data Scientist</div>
-      <div class="subtext">math, coding, problem solving</div>
-    </div>
-    <p></p>
-    <a href="resume_2024.pdf" target="_blank">
-      <div class="button">Resume</div>
-    </a>
-  </div>
 
-    <div class="display-box">
-      <p class="medium-text"><a href="projects.html">Projects</a></p>
-      <section class="project-box">
-        <!-- 2024 -->
-        <div class="project">
-          <div class="project-name">Vaccine Scheduler</div>
-          <div class="project-tag">SQL, Azure</div>
-          <div class="project-year">2024</div>
-          <a href="https://github.com/dqymaggie/414database-uw24sp"><img src="images/vaccine.webp" alt=""></a>
+    <!-- MAIN / HERO -->
+    <main id="top" class="container">
+      <section class="hero reveal" aria-label="Introduction">
+        <div>
+          <div class="pill"><i class="fa-solid fa-code"></i> Software Engineer • ML Engineer • Data Scientist</div>
+          <h1>Maggie Dong</h1>
+          <p class="subtitle">
+            I build reliable software and ML systems end-to-end — from data pipelines and modeling to front‑end polish. I love turning messy problems into simple, usable products.
+          </p>
+          <div class="hero-ctas">
+            <a class="btn primary" href="resume_2024.pdf" target="_blank" rel="noopener">
+              <i class="fa-solid fa-file-lines"></i> Resume
+            </a>
+            <a class="btn" href="https://github.com/dqymaggie" target="_blank" rel="noopener">
+              <i class="fa-brands fa-github"></i> GitHub
+            </a>
+            <a class="btn" href="https://www.linkedin.com/in/dqymaggie/" target="_blank" rel="noopener">
+              <i class="fa-brands fa-linkedin"></i> LinkedIn
+            </a>
+          </div>
         </div>
-        <div class="project">
-          <div class="project-name">Algorithms</div>
-          <div class="project-tag">Java</div>
-          <div class="project-year">2024</div>
-          <a href="https://github.com/dqymaggie/417algorithms-uw24wi"><img src="images/project.png" alt=""></a>
-        </div>
-        <div class="project">
-          <div class="project-name">Applied Statistics</div>
-          <div class="project-tag">R</div>
-          <div class="project-year">2024</div>
-          <a href="https://github.com/dqymaggie/414database-uw24sp"><img src="images/project.png" alt=""></a>
-        </div>
-        <div class="project">
-          <div class="project-name">Dependent Data</div>
-          <div class="project-tag">R</div>
-          <div class="project-year">2024</div>
-          <a href="https://github.com/dqymaggie/417algorithms-uw24wi"><img src="images/project.png" alt=""></a>
+        <div class="avatar-wrap">
+          <a href="https://github.com/dqymaggie" target="_blank" rel="noopener">
+            <img class="avatar" src="images/profile.png" alt="Portrait of Maggie Dong" />
+          </a>
         </div>
       </section>
-    </div>
 
-    <!-- Footer -->
-    <footer>
-      <div class="contact-icon">
-        <a href="mailto:dqymaggie@gmail.com" target="_blank">
-          <i class="fa-solid fa-envelope"></i>
-          <!-- <i class="fa fa-envelope" style="font-size:32px"></i> -->
-        </a>
-      </div>
-      <div class="contact-icon">
-        <a href="https://www.linkedin.com/in/dqymaggie/" target="_blank">
-          <i class="fa-brands fa-linkedin"></i>
-          <!-- <i class="fa fa-linkedin-square" style="font-size:36px"></i> -->
-        </a>
-      </div>
-      <div class="contact-icon">
-        <a href="https://github.com/dqymaggie" target="_blank">
-          <i class="fa-brands fa-github"></i>
-        </a>
-      </div>
-    </footer>
+      <!-- SKILLS -->
+      <section id="skills" class="reveal" aria-label="Skills">
+        <h2 class="section-title">Skillsets by Use Case</h2>
+        <div class="skills-grid">
+          <article class="skill-card">
+            <h3><i class="fa-solid fa-terminal"></i> Languages</h3>
+            <div class="chips">
+              <span class="chip"><i class="fa-brands fa-python"></i> Python</span>
+              <span class="chip"><i class="fa-brands fa-java"></i> Java</span>
+              <span class="chip"><i class="fa-solid fa-database"></i> SQL</span>
+              <span class="chip"><i class="fa-solid fa-r"></i> R</span>
+              <span class="chip"><i class="fa-brands fa-js"></i> JavaScript</span>
+              <span class="chip"><i class="fa-brands fa-html5"></i> HTML</span>
+              <span class="chip"><i class="fa-brands fa-css3-alt"></i> CSS</span>
+            </div>
+          </article>
 
-    <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      var theme = localStorage.getItem('theme');
-      var element = document.body;
-      var icon = document.getElementById('darkmode-icon');
-      
-      if (theme === 'dark') {
-          element.classList.add('dark-mode');
-          icon.classList.remove('bi-moon-fill');
-          icon.classList.add('bi-sun');
-      } else {
-          element.classList.remove('dark-mode');
-          icon.classList.remove('bi-sun');
-          icon.classList.add('bi-moon-fill');
-      }
-  });
-</script>
-  
+          <article class="skill-card">
+            <h3><i class="fa-solid fa-gears"></i> Backend & Data</h3>
+            <div class="chips">
+              <span class="chip"><i class="fa-solid fa-sitemap"></i> REST APIs</span>
+              <!-- <span class="chip"><i class="fa-solid fa-database"></i> PostgreSQL</span> -->
+              <span class="chip"><i class="fa-solid fa-database"></i> MySQL</span>
+              <span class="chip"><i class="fa-solid fa-database"></i> MongoDB</span>
+              <span class="chip"><i class="fa-solid fa-diagram-project"></i> ETL / Pipelines</span>
+              <span class="chip"><i class="fa-solid fa-cubes"></i> Spark / PySpark</span>
+              <span class="chip"><i class="fa-solid fa-table"></i> Databricks</span>
+            </div>
+          </article>
 
+          <article class="skill-card">
+            <h3><i class="fa-solid fa-robot"></i> Machine Learning & AI</h3>
+            <div class="chips">
+              <span class="chip"><i class="fa-solid fa-brain"></i> PyTorch</span>
+              <span class="chip"><i class="fa-solid fa-brain"></i> TensorFlow</span>
+              <span class="chip"><i class="fa-solid fa-shapes"></i> Classical ML</span>
+              <span class="chip"><i class="fa-solid fa-image"></i> CV / Image Processing</span>
+              <span class="chip"><i class="fa-solid fa-language"></i> NLP</span>
+              <!-- <span class="chip"><i class="fa-solid fa-chart-line"></i> Experimentation</span> -->
+            </div>
+          </article>
+
+          <article class="skill-card">
+            <h3><i class="fa-solid fa-cloud"></i> Cloud & DevOps</h3>
+            <div class="chips">
+              <span class="chip"><i class="fa-brands fa-aws"></i> AWS</span>
+              <span class="chip"><i class="bi bi-microsoft"></i> Azure</span>
+              <!-- <span class="chip"><i class="fa-brands fa-docker"></i> Docker</span> -->
+              <span class="chip"><i class="fa-solid fa-diagram-next"></i> CI / CD</span>
+              <!-- <span class="chip"><i class="fa-solid fa-network-wired"></i> Kubernetes (basic)</span> -->
+              <span class="chip"><i class="fa-solid fa-shield"></i> Testing / QA</span>
+            </div>
+          </article>
+
+          <article class="skill-card">
+            <h3><i class="fa-solid fa-window-maximize"></i> Frontend & Tools</h3>
+            <div class="chips">
+              <!-- <span class="chip"><i class="fa-brands fa-react"></i> React</span> -->
+              <!-- <span class="chip"><i class="fa-solid fa-pen-ruler"></i> Tailwind / Bootstrap</span> -->
+              <!-- <span class="chip"><i class="fa-solid fa-wand-magic-sparkles"></i> UX Polish</span> -->
+              <span class="chip"><i class="fa-solid fa-chart-column"></i> Tableau</span>
+              <span class="chip"><i class="fa-solid fa-code-branch"></i> Git / GitHub</span>
+              <span class="chip"><i class="fa-solid fa-bug"></i> Debugging</span>
+            </div>
+          </article>
+
+          <article class="skill-card">
+            <h3><i class="fa-solid fa-people-group"></i> Collaboration</h3>
+            <div class="chips">
+              <span class="chip"><i class="fa-solid fa-comments"></i> Communication</span>
+              <!-- <span class="chip"><i class="fa-solid fa-diagram-project"></i> Agile / Scrum</span> -->
+              <span class="chip"><i class="fa-solid fa-handshake"></i> Cross-functional</span>
+              <span class="chip"><i class="fa-solid fa-note-sticky"></i> Documentation</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects" class="reveal" aria-label="Projects">
+        <h2 class="section-title">Selected Projects [Updating]</h2>
+        <div class="projects-grid">
+          <article class="project-card">
+            <a href="https://rosewellhc.com" target="_blank" rel="noopener">
+              <img class="project-thumb" src="images/rosewell.png" alt="rosewell healthcare website" />
+            </a>
+            <div class="project-body">
+              <h3 class="project-title">Rosewell healthcare website</h3>
+              <div class="project-meta">HTML · CSS · JavaScript</div>
+              <div class="project-links">
+                <a class="btn" href="https://github.com/dqymaggie/rosewell-website" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Code</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="reveal" aria-label="Contact">
+        <h2 class="section-title">Get in Touch</h2>
+        <div class="contact-wrap">
+          <div class="contact-card">
+            <h3>Let's connect!</h3>
+            <p class="muted">If my work resonates with your team, I'd love to chat.</p>
+            <div class="contact-actions">
+              <a class="btn primary" href="mailto:dqymaggie@gmail.com" target="_blank" rel="noopener"><i class="fa-solid fa-envelope"></i> Email Me</a>
+              <a class="btn" href="https://www.linkedin.com/in/dqymaggie/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i> Message</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <h3>Open to Work</h3>
+            <ul class="muted">
+              <li>Software Engineer, ML Engineer, and Data Scientist roles</li>
+              <li>US-based, flexible on location</li>
+              <li>Does not require sponsorship</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <footer class="container">
+        © <span id="year">2025</span> Maggie Dong — All rights reserved.
+      </footer>
+    </main>
   </body>
 </html>
